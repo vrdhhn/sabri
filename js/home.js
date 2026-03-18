@@ -2,6 +2,8 @@ import '../style.css'
 import { createHeader } from '../components/header.js'
 import { createFooter } from '../components/footer.js'
 import { initScrollAnimations, initScrollToTop, initLeadModal } from '../js/utils.js'
+import productsData from '../data/products.json'
+import updatesData from '../data/updates.json'
 
 // Init shared components
 createHeader('Home')
@@ -33,11 +35,9 @@ const categoryLabels = {
 }
 
 // Load featured products
-async function loadFeaturedProducts() {
+function loadFeaturedProducts() {
   try {
-    const res = await fetch('/data/products.json')
-    const data = await res.json()
-    const products = data.items || data
+    const products = productsData.items || productsData
     const featured = products.slice(0, 4)
     const grid = document.getElementById('featuredProducts')
 
@@ -68,11 +68,9 @@ async function loadFeaturedProducts() {
 }
 
 // Load updates
-async function loadUpdates() {
+function loadUpdates() {
   try {
-    const res = await fetch('/data/updates.json')
-    const data = await res.json()
-    const updates = data.items || data
+    const updates = updatesData.items || updatesData
     const grid = document.getElementById('updatesGrid')
 
     grid.innerHTML = updates

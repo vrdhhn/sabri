@@ -2,6 +2,7 @@ import '../style.css'
 import { createHeader } from '../components/header.js'
 import { createFooter } from '../components/footer.js'
 import { initScrollAnimations, initScrollToTop, initLeadModal } from '../js/utils.js'
+import productsData from '../data/products.json'
 
 createHeader('Products')
 createFooter()
@@ -70,11 +71,9 @@ document.getElementById('categoryFilters').addEventListener('click', (e) => {
 })
 
 // Load all products
-async function loadProducts() {
+function loadProducts() {
   try {
-    const res = await fetch('/data/products.json')
-    const data = await res.json()
-    allProducts = data.items || data
+    allProducts = productsData.items || productsData
     renderProducts()
   } catch (e) {
     console.error('Failed to load products:', e)
