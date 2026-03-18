@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products & Services — SABRI Pvt. Ltd.</title>
+  <meta name="description" content="Explore SABRI's diverse range of exotic vegetables, spices, mushrooms, and farming services. Enquire about bulk orders and partnerships." />
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="section-label" style="color:var(--yellow-400);">Our Produce</span>
+      <h1>Products & Services</h1>
+      <p>From exotic vegetables to premium spices — explore our diverse, quality-assured product portfolio.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Product Catalogue</span>
+        <h2>Our Product Range</h2>
+        <p>Specializing in high-demand produce grown through innovative farming techniques.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="category-filters animate-on-scroll" id="categoryFilters">
+        <button class="filter-btn active" data-category="all">All Products</button>
+        <button class="filter-btn" data-category="exotic">Exotic Vegetables</button>
+        <button class="filter-btn" data-category="non-exotic">Non-Exotic Vegetables</button>
+        <button class="filter-btn" data-category="spice">Spices</button>
+        <button class="filter-btn" data-category="mushroom">Mushrooms</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid-4" id="productsGrid">
+        <!-- Loaded by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section bg-green-light bg-pattern">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Our Services</span>
+        <h2>Farming & Supply Chain Services</h2>
+        <p>Complete agricultural solutions from cultivation to market delivery.</p>
+      </div>
+      <div class="grid-2">
+        <div class="service-card animate-on-scroll animate-delay-1">
+          <div class="service-icon">🌾</div>
+          <h4>Contract Farming</h4>
+          <p>Assuring market access and fair prices for farmers through pre-agreed contracts. We provide seeds, technical guidance, and guaranteed buyback.</p>
+          <button class="btn btn-sm btn-primary" style="margin-top:var(--space-md);" onclick="openLeadModal('Contract Farming')">Enquire Now →</button>
+        </div>
+        <div class="service-card animate-on-scroll animate-delay-2">
+          <div class="service-icon">💧</div>
+          <h4>Hydroponics Setup</h4>
+          <p>Sustainable, water-efficient cultivation for high-value exotic crops. We help set up and manage advanced hydroponic farming systems.</p>
+          <button class="btn btn-sm btn-primary" style="margin-top:var(--space-md);" onclick="openLeadModal('Hydroponics Setup')">Enquire Now →</button>
+        </div>
+        <div class="service-card animate-on-scroll animate-delay-3">
+          <div class="service-icon">🏭</div>
+          <h4>Controlled Environment Farming</h4>
+          <p>Optimized polyhouse conditions for maximum output and quality control. Year-round production irrespective of weather conditions.</p>
+          <button class="btn btn-sm btn-primary" style="margin-top:var(--space-md);" onclick="openLeadModal('Controlled Environment Farming')">Enquire Now →</button>
+        </div>
+        <div class="service-card animate-on-scroll animate-delay-4">
+          <div class="service-icon">📦</div>
+          <h4>Value Addition & Processing</h4>
+          <p>Packaging, branding, and pre-processing services to enhance product appeal and shelf life for retail distribution.</p>
+          <button class="btn btn-sm btn-primary" style="margin-top:var(--space-md);" onclick="openLeadModal('Value Addition & Processing')">Enquire Now →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="invest-cta animate-on-scroll">
+        <span class="section-label" style="color:var(--yellow-400);">Bulk Orders</span>
+        <h2>Looking for Bulk Supply?</h2>
+        <p>We partner with retailers, restaurants, and food processors. Get in touch for custom volume-based pricing.</p>
+        <a href="/contact.html" class="btn btn-yellow">Request a Quote →</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/js/products.js"></script>
+</body>
+</html>

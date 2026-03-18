@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "SABRI Receives DPIIT Recognition",
+      "date": "2025-12-15",
+      "summary": "SABRI Pvt. Ltd. has been officially recognized by the Department for Promotion of Industry and Internal Trade (DPIIT) as an innovative startup in the agricultural sector.",
+      "tag": "Achievement"
+    },
+    {
+      "id": 2,
+      "title": "New Hi-Tech Polyhouse Operational",
+      "date": "2026-01-20",
+      "summary": "Our state-of-the-art 320 sq.m Hi-Tech Polyhouse for exotic seed germination is now fully operational, enabling year-round production of premium vegetables.",
+      "tag": "Infrastructure"
+    },
+    {
+      "id": 3,
+      "title": "Partnership with Major Retail Platforms",
+      "date": "2026-02-10",
+      "summary": "SABRI expands its market reach through partnerships with leading platforms including Amazon Fresh, Zepto, BigBasket, and Flipkart Minutes.",
+      "tag": "Partnership"
+    },
+    {
+      "id": 4,
+      "title": "Hydroponics Pilot Program Launched",
+      "date": "2026-03-01",
+      "summary": "Launching our water-efficient hydroponics cultivation program for high-value exotic crops, reducing water usage by up to 70%.",
+      "tag": "Innovation"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/images/products"
+public_folder: "/images/products"
+
+collections:
+  - name: "website_data"
+    label: "Website Data"
+    files:
+      - label: "Products"
+        name: "products_data"
+        file: "data/products.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Products List"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "number"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["exotic", "non-exotic", "spice", "mushroom"]}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image", required: false}
+      - label: "Updates"
+        name: "updates_data"
+        file: "data/updates.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Updates List"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "number"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Tag", name: "tag", widget: "string"}

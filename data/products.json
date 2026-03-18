@@ -1,0 +1,81 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Bell Peppers",
+      "category": "exotic",
+      "description": "Fresh, vibrant bell peppers grown in controlled environment polyhouses for consistent quality and flavor.",
+      "image": "/images/products/bell-peppers.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Zucchini",
+      "category": "exotic",
+      "description": "Premium zucchini cultivated using hydroponic and modern farming techniques for superior taste.",
+      "image": "/images/products/zucchini.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lettuce",
+      "category": "exotic",
+      "description": "Crisp, fresh lettuce varieties grown in pesticide-free controlled environments.",
+      "image": "/images/products/lettuce.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Broccoli",
+      "category": "exotic",
+      "description": "Nutrient-rich broccoli produced through sustainable farming for health-conscious consumers.",
+      "image": "/images/products/broccoli.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Okra (Bhindi)",
+      "category": "non-exotic",
+      "description": "Traditional okra grown with enhanced modern agricultural practices for higher yields.",
+      "image": "/images/products/okra.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cucumber",
+      "category": "non-exotic",
+      "description": "Crunchy cucumbers cultivated through tech-enabled farming for consistent supply.",
+      "image": "/images/products/cucumber.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Spinach",
+      "category": "non-exotic",
+      "description": "Iron-rich spinach grown with organic practices and smart monitoring systems.",
+      "image": "/images/products/spinach.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Turmeric",
+      "category": "spice",
+      "description": "High-curcumin turmeric sourced from select farms with full traceability.",
+      "image": "/images/products/turmeric.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Saffron",
+      "category": "spice",
+      "description": "Premium Indian saffron cultivated with precision farming techniques.",
+      "image": "/images/products/saffron.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Oyster Mushrooms",
+      "category": "mushroom",
+      "description": "Delicate oyster mushrooms grown in climate-controlled facilities for gourmet quality.",
+      "image": "/images/products/oyster-mushroom.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Button Mushrooms",
+      "category": "mushroom",
+      "description": "Classic button mushrooms cultivated in optimized conditions for consistent texture and taste.",
+      "image": "/images/products/button-mushroom.jpg"
+    }
+  ]
+}
