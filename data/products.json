@@ -2,80 +2,94 @@
   "items": [
     {
       "id": 1,
-      "name": "Bell Peppers",
+      "name": "Bell Pepper",
       "category": "exotic",
       "description": "Fresh, vibrant bell peppers grown in controlled environment polyhouses for consistent quality and flavor.",
-      "image": "/images/products/bell-peppers.jpg"
+      "image": "/images/bell_pepper.jpeg"
     },
     {
       "id": 2,
       "name": "Zucchini",
       "category": "exotic",
       "description": "Premium zucchini cultivated using hydroponic and modern farming techniques for superior taste.",
-      "image": "/images/products/zucchini.jpg"
+      "image": "/images/zuccini.jpeg"
     },
     {
       "id": 3,
-      "name": "Lettuce",
+      "name": "Iceberg Lettuce",
       "category": "exotic",
       "description": "Crisp, fresh lettuce varieties grown in pesticide-free controlled environments.",
-      "image": "/images/products/lettuce.jpg"
+      "image": "/images/iceberg_lettuce.jpeg"
     },
     {
       "id": 4,
       "name": "Broccoli",
       "category": "exotic",
       "description": "Nutrient-rich broccoli produced through sustainable farming for health-conscious consumers.",
-      "image": "/images/products/broccoli.jpg"
+      "image": "/images/broccli.jpeg"
     },
     {
       "id": 5,
-      "name": "Okra (Bhindi)",
-      "category": "non-exotic",
-      "description": "Traditional okra grown with enhanced modern agricultural practices for higher yields.",
-      "image": "/images/products/okra.jpg"
+      "name": "Baby Corn",
+      "category": "exotic",
+      "description": "Tender baby corn grown carefully for maximum flavor.",
+      "image": "/images/baby_corn.jpeg"
     },
     {
       "id": 6,
       "name": "Cucumber",
       "category": "non-exotic",
       "description": "Crunchy cucumbers cultivated through tech-enabled farming for consistent supply.",
-      "image": "/images/products/cucumber.jpg"
+      "image": "/images/cucumber.jpeg"
     },
     {
       "id": 7,
-      "name": "Spinach",
-      "category": "non-exotic",
-      "description": "Iron-rich spinach grown with organic practices and smart monitoring systems.",
-      "image": "/images/products/spinach.jpg"
+      "name": "Cherry Tomato",
+      "category": "exotic",
+      "description": "Sweet, vibrant cherry tomatoes cultivated organically.",
+      "image": "/images/cherry_tomato.jpeg"
     },
     {
       "id": 8,
-      "name": "Turmeric",
-      "category": "spice",
-      "description": "High-curcumin turmeric sourced from select farms with full traceability.",
-      "image": "/images/products/turmeric.jpg"
+      "name": "Green Capsicum",
+      "category": "non-exotic",
+      "description": "Fresh green capsicums perfect for a variety of culinary uses.",
+      "image": "/images/green_capcicum.jpeg"
     },
     {
       "id": 9,
-      "name": "Saffron",
-      "category": "spice",
-      "description": "Premium Indian saffron cultivated with precision farming techniques.",
-      "image": "/images/products/saffron.jpg"
+      "name": "Pak Choy",
+      "category": "exotic",
+      "description": "Leafy green pak choy grown in advanced hydroponic setups.",
+      "image": "/images/pak_choy.jpeg"
     },
     {
       "id": 10,
       "name": "Oyster Mushrooms",
       "category": "mushroom",
       "description": "Delicate oyster mushrooms grown in climate-controlled facilities for gourmet quality.",
-      "image": "/images/products/oyster-mushroom.jpg"
+      "image": "/images/oyester_mushroom.jpeg"
     },
     {
       "id": 11,
       "name": "Button Mushrooms",
       "category": "mushroom",
       "description": "Classic button mushrooms cultivated in optimized conditions for consistent texture and taste.",
-      "image": "/images/products/button-mushroom.jpg"
+      "image": "/images/button_mushroom.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Parsley",
+      "category": "exotic",
+      "description": "Fresh parsley herbs grown without pesticides.",
+      "image": "/images/parsley.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Sweet Corn",
+      "category": "non-exotic",
+      "description": "Farm fresh sweet corn, perfect for healthy snacking.",
+      "image": "/images/seet_corn.jpeg"
     }
   ]
 }

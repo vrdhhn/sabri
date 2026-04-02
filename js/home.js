@@ -41,25 +41,26 @@ function loadFeaturedProducts() {
     const featured = products.slice(0, 4)
     const grid = document.getElementById('featuredProducts')
 
-    grid.innerHTML = featured
-      .map(
-        (p, i) => `
-      <div class="product-card animate-on-scroll animate-delay-${i + 1}">
-        <div class="product-card-img">
-          <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display=''" />
-          <span class="emoji-placeholder" style="display:none">${emojiMap[p.name] || '🌱'}</span>
+    if (grid) {
+      grid.innerHTML = featured
+        .map(
+          (p, i) => `
+        <div class="product-card animate-on-scroll animate-delay-${i + 1}">
+          <div class="product-card-img">
+            <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display=''" />
+            <span class="emoji-placeholder" style="display:none">${emojiMap[p.name] || '🌱'}</span>
+          </div>
+          <div class="product-card-body">
+            <span class="category-tag">${categoryLabels[p.category] || p.category}</span>
+            <h4>${p.name}</h4>
+            <p>${p.description}</p>
+            <button class="btn btn-sm btn-primary" onclick="openLeadModal('${p.name}')">Enquire Now →</button>
+          </div>
         </div>
-        <div class="product-card-body">
-          <span class="category-tag">${categoryLabels[p.category] || p.category}</span>
-          <h4>${p.name}</h4>
-          <p>${p.description}</p>
-          <button class="btn btn-sm btn-primary" onclick="openLeadModal('${p.name}')">Enquire Now →</button>
-        </div>
-      </div>
-    `
-      )
-      .join('')
-
+      `
+        )
+        .join('')
+    }
     // Re-init scroll animations for new elements
     initScrollAnimations()
   } catch (e) {
