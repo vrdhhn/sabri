@@ -156,6 +156,7 @@ p {
 
 .section {
   padding: var(--space-4xl) 0;
+  position: relative;
 }
 
 .section-header {
@@ -1325,6 +1326,7 @@ p {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
   .section { padding: var(--space-3xl) 0; }
+  .section[id] { scroll-margin-top: 80px; }
   .container { padding: 0 var(--space-md); }
   .stats-row { grid-template-columns: 1fr; }
   .hero-stats { flex-direction: column; gap: var(--space-md); }
@@ -1422,6 +1424,14 @@ p {
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('/images/logo.jpg') center/cover no-repeat;
   opacity: 0.15;
+}
+
+@media (max-width: 600px) {
+  .hero-bg-img {
+    background-size: contain;
+    background-position: center center;
+    opacity: 0.12;
+  }
 }
 .hero-sabri .hero-content {
   position: relative;

@@ -37,59 +37,73 @@
     },
     {
       "id": 6,
+      "name": "Cherry Tomato",
+      "category": "exotic",
+      "description": "Sweet, vibrant cherry tomatoes cultivated through sustainable farming practices.",
+      "image": "/images/cherry_tomato.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Pak Choy",
+      "category": "exotic",
+      "description": "Leafy green pak choy grown in advanced hydroponic setups for premium quality.",
+      "image": "/images/pak_choy.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Parsley",
+      "category": "exotic",
+      "description": "Fresh parsley herbs cultivated without pesticides for safe, wholesome use.",
+      "image": "/images/parsley.jpeg"
+    },
+    {
+      "id": 9,
       "name": "Cucumber",
       "category": "non-exotic",
       "description": "Crunchy cucumbers cultivated through tech-enabled farming for consistent supply.",
       "image": "/images/cucumber.jpeg"
     },
     {
-      "id": 7,
-      "name": "Cherry Tomato",
-      "category": "exotic",
-      "description": "Sweet, vibrant cherry tomatoes cultivated organically.",
-      "image": "/images/cherry_tomato.jpeg"
-    },
-    {
-      "id": 8,
+      "id": 10,
       "name": "Green Capsicum",
       "category": "non-exotic",
       "description": "Fresh green capsicums perfect for a variety of culinary uses.",
       "image": "/images/green_capcicum.jpeg"
     },
     {
-      "id": 9,
-      "name": "Pak Choy",
-      "category": "exotic",
-      "description": "Leafy green pak choy grown in advanced hydroponic setups.",
-      "image": "/images/pak_choy.jpeg"
+      "id": 11,
+      "name": "Sweet Corn",
+      "category": "non-exotic",
+      "description": "Farm fresh sweet corn — nutritious and perfect for healthy snacking.",
+      "image": "/images/seet_corn.jpeg"
     },
     {
-      "id": 10,
+      "id": 12,
       "name": "Oyster Mushrooms",
       "category": "mushroom",
       "description": "Delicate oyster mushrooms grown in climate-controlled facilities for gourmet quality.",
       "image": "/images/oyester_mushroom.jpeg"
     },
     {
-      "id": 11,
+      "id": 13,
       "name": "Button Mushrooms",
       "category": "mushroom",
-      "description": "Classic button mushrooms cultivated in optimized conditions for consistent texture and taste.",
+      "description": "Classic button mushrooms cultivated in optimised conditions for consistent texture and taste.",
       "image": "/images/button_mushroom.jpeg"
     },
     {
-      "id": 12,
-      "name": "Parsley",
-      "category": "exotic",
-      "description": "Fresh parsley herbs grown without pesticides.",
-      "image": "/images/parsley.jpeg"
+      "id": 14,
+      "name": "Makhana",
+      "category": "processed",
+      "description": "High-value Makhana (fox nuts) — a nutritious, value-added product central to SABRI's food processing mission.",
+      "image": "/images/makhana.png"
     },
     {
-      "id": 13,
-      "name": "Sweet Corn",
-      "category": "non-exotic",
-      "description": "Farm fresh sweet corn, perfect for healthy snacking.",
-      "image": "/images/seet_corn.jpeg"
+      "id": 15,
+      "name": "Processed Foods",
+      "category": "processed",
+      "description": "Value-added processed food products developed from high-quality farm produce including millets and probiotic foods.",
+      "image": "/images/processed_foods.png"
     }
   ]
 }
