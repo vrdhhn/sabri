@@ -52,11 +52,6 @@ export function createFooter() {
       </div>
       <div class="footer-bottom">
         <p>© ${new Date().getFullYear()} SABRI Pvt. Ltd. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
-          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-        </div>
       </div>
     </div>
   `;
