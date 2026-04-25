@@ -1,4 +1,4 @@
-// ⚠️ Replace with your Web3Forms access key from https://web3forms.com
+// NOTE: Replace with your Web3Forms access key from https://web3forms.com
 const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE';
 
 // Scroll animations observer
@@ -22,7 +22,7 @@ export function initScrollToTop() {
   const btn = document.createElement('button');
   btn.className = 'scroll-top';
   btn.id = 'scrollTop';
-  btn.innerHTML = '↑';
+  btn.innerHTML = '<i data-lucide="arrow-up"></i>';
   btn.setAttribute('aria-label', 'Scroll to top');
   document.body.appendChild(btn);
 
@@ -33,6 +33,10 @@ export function initScrollToTop() {
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
 
 // Lead generation modal
@@ -43,7 +47,7 @@ export function initLeadModal() {
 
   overlay.innerHTML = `
     <div class="modal" style="position:relative;">
-      <button class="modal-close" id="modalClose">✕</button>
+      <button class="modal-close" id="modalClose"><i data-lucide="x"></i></button>
       <h3>Enquire About This Product</h3>
       <p style="color: var(--gray-600);">Fill in your details and we'll get back to you within 24 hours.</p>
       <form id="leadForm">
@@ -67,7 +71,7 @@ export function initLeadModal() {
         <button type="submit" class="btn btn-primary" style="width:100%;">Submit Enquiry</button>
       </form>
       <div class="form-success" id="leadSuccess">
-        <div class="checkmark">✓</div>
+        <div class="checkmark"><i data-lucide="check"></i></div>
         <h3>Thank You!</h3>
         <p>Your enquiry has been submitted. Our team will reach out within 24 hours.</p>
       </div>
@@ -75,6 +79,10 @@ export function initLeadModal() {
   `;
 
   document.body.appendChild(overlay);
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 
   const closeModal = () => {
     overlay.classList.remove('active');
@@ -96,7 +104,7 @@ export function initLeadModal() {
     try {
       const formData = new FormData(e.target);
       formData.append('access_key', WEB3FORMS_KEY);
-      formData.append('subject', 'New Product Enquiry — ' + (formData.get('product') || 'General'));
+      formData.append('subject', 'New Product Enquiry - ' + (formData.get('product') || 'General'));
       formData.append('from_name', 'SABRI Website');
 
       const res = await fetch('https://api.web3forms.com/submit', {

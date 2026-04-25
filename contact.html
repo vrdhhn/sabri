@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us — SABRI Pvt. Ltd.</title>
   <meta name="description" content="Get in touch with SABRI Pvt. Ltd. for product enquiries, bulk orders, partnerships, or investment opportunities. We'd love to hear from you." />
-  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="icon" href="/images/logo.png" />
   <link rel="stylesheet" href="/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="container page-hero-content">
-      <span class="section-label" style="color:var(--yellow-400);">Get in Touch</span>
+      <span class="section-label" style="color:var(--white);">Get in Touch</span>
       <h1>Contact Us</h1>
       <p>Have questions about our products, services, or partnership opportunities? We'd love to hear from you.</p>
     </div>
@@ -33,14 +34,28 @@
                 <input type="text" id="contactName" name="name" required placeholder="Your full name" />
               </div>
               <div class="form-group">
-                <label for="contactEmail">Email *</label>
-                <input type="email" id="contactEmail" name="email" required placeholder="you@example.com" />
+                <label for="contactRole">I am a *</label>
+                <select id="contactRole" name="role" required>
+                  <option value="">Select role...</option>
+                  <option value="buyer">Buyer</option>
+                  <option value="seller">Seller / Farmer</option>
+                </select>
               </div>
             </div>
             <div class="grid-2">
               <div class="form-group">
                 <label for="contactPhone">Phone *</label>
                 <input type="tel" id="contactPhone" name="phone" required placeholder="+91 XXXXX XXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email <span style="font-weight:400;color:var(--gray-400);font-size:0.82rem;">(optional)</span></label>
+                <input type="email" id="contactEmail" name="email" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="contactCity">City *</label>
+                <input type="text" id="contactCity" name="city" required placeholder="Your city" />
               </div>
               <div class="form-group">
                 <label for="contactInterest">I'm Interested In</label>
@@ -54,6 +69,27 @@
                   <option value="other">Other</option>
                 </select>
               </div>
+            </div>
+            <div class="form-group">
+              <label for="contactProducts">Products of Interest</label>
+              <select id="contactProducts" name="products" multiple style="min-height:110px;">
+                <option value="bell-pepper">Bell Pepper</option>
+                <option value="zucchini">Zucchini</option>
+                <option value="iceberg-lettuce">Iceberg Lettuce</option>
+                <option value="broccoli">Broccoli</option>
+                <option value="baby-corn">Baby Corn</option>
+                <option value="cherry-tomato">Cherry Tomato</option>
+                <option value="pak-choy">Pak Choy</option>
+                <option value="parsley">Parsley</option>
+                <option value="cucumber">Cucumber</option>
+                <option value="green-capsicum">Green Capsicum</option>
+                <option value="sweet-corn">Sweet Corn</option>
+                <option value="oyster-mushrooms">Oyster Mushrooms</option>
+                <option value="button-mushrooms">Button Mushrooms</option>
+                <option value="makhana">Makhana</option>
+                <option value="processed-foods">Processed Foods</option>
+              </select>
+              <small style="color:var(--gray-400);font-size:0.8rem;margin-top:4px;display:block;">Hold Ctrl / Cmd to select multiple products</small>
             </div>
             <div class="form-group">
               <label for="contactMessage">Message *</label>
@@ -74,7 +110,7 @@
           <p style="margin-bottom:var(--space-2xl);">You can also reach us directly through any of the channels below.</p>
 
           <div class="contact-info-card">
-            <div class="contact-icon">📧</div>
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
             <div>
               <h4 style="margin-bottom:2px;">Email</h4>
               <p style="margin-bottom:0;font-size:0.9rem;">info.sabripvt@gmail.com</p>
@@ -82,7 +118,7 @@
           </div>
 
           <div class="contact-info-card">
-            <div class="contact-icon">📞</div>
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
             <div>
               <h4 style="margin-bottom:2px;">Phone</h4>
               <p style="margin-bottom:0;font-size:0.9rem;">+91 7360867602<br/>+91 9931998414</p>
@@ -90,15 +126,22 @@
           </div>
 
           <div class="contact-info-card">
-            <div class="contact-icon">🌐</div>
+            <div class="contact-icon"><i data-lucide="globe"></i></div>
             <div>
               <h4 style="margin-bottom:2px;">Website</h4>
               <p style="margin-bottom:0;font-size:0.9rem;">www.sabri.com</p>
             </div>
           </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <h4 style="margin-bottom:2px;">Sales &amp; Marketing Office</h4>
+              <p style="margin-bottom:0;font-size:0.9rem;">4th Floor C-373, New Ashok Nagar, New Delhi, 110096</p>
+            </div>
+          </div>
 
           <div class="contact-info-card">
-            <div class="contact-icon">📱</div>
+            <div class="contact-icon"><i data-lucide="smartphone"></i></div>
             <div>
               <h4 style="margin-bottom:2px;">Social Media</h4>
               <p style="margin-bottom:0;font-size:0.9rem;">Follow us on YouTube & Instagram</p>
@@ -106,8 +149,8 @@
           </div>
 
           <!-- Quick CTA -->
-          <div style="margin-top:var(--space-2xl);padding:var(--space-xl);background:linear-gradient(135deg,var(--green-50),var(--yellow-100));border-radius:var(--radius-lg);">
-            <h4 style="margin-bottom:var(--space-sm);">🤝 Partnership Enquiries</h4>
+          <div style="margin-top:var(--space-2xl);padding:var(--space-xl);background:linear-gradient(135deg,var(--green-50),var(--blue-100));border-radius:var(--radius-lg);">
+            <h4 style="margin-bottom:var(--space-sm); display:flex; align-items:center; gap:8px;"><i data-lucide="handshake" style="color:var(--green-700);"></i> Partnership Enquiries</h4>
             <p style="font-size:0.9rem;">Looking to partner as a retailer, distributor, or investor? We'd love to discuss opportunities.</p>
             <p style="font-size:0.9rem;margin-bottom:0;"><strong>Direct Line:</strong> +91 7360867602</p>
           </div>
@@ -117,5 +160,8 @@
   </section>
 
   <script type="module" src="/js/contact.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

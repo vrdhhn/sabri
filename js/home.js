@@ -12,21 +12,6 @@ initScrollAnimations()
 initScrollToTop()
 initLeadModal()
 
-// Product emoji map
-const emojiMap = {
-  'Bell Peppers': '🫑',
-  'Zucchini': '🥒',
-  'Lettuce': '🥬',
-  'Broccoli': '🥦',
-  'Okra (Bhindi)': '🌿',
-  'Cucumber': '🥒',
-  'Spinach': '🥬',
-  'Turmeric': '🟡',
-  'Saffron': '🌸',
-  'Oyster Mushrooms': '🍄',
-  'Button Mushrooms': '🍄',
-}
-
 const categoryLabels = {
   exotic: 'Exotic',
   'non-exotic': 'Non-Exotic',
@@ -48,7 +33,7 @@ function loadFeaturedProducts() {
         <div class="product-card animate-on-scroll animate-delay-${i + 1}">
           <div class="product-card-img">
             <img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display=''" />
-            <span class="emoji-placeholder" style="display:none">${emojiMap[p.name] || '🌱'}</span>
+            <span class="emoji-placeholder" style="display:none"><i data-lucide="sprout"></i></span>
           </div>
           <div class="product-card-body">
             <span class="category-tag">${categoryLabels[p.category] || p.category}</span>
@@ -61,8 +46,11 @@ function loadFeaturedProducts() {
         )
         .join('')
     }
-    // Re-init scroll animations for new elements
+    // Re-init scroll animations and icons for new elements
     initScrollAnimations()
+    if (window.lucide) {
+      window.lucide.createIcons()
+    }
   } catch (e) {
     console.error('Failed to load products:', e)
   }
@@ -74,18 +62,20 @@ function loadUpdates() {
     const updates = updatesData.items || updatesData
     const grid = document.getElementById('updatesGrid')
 
-    grid.innerHTML = updates
-      .map(
-        (u, i) => `
-      <div class="update-card animate-on-scroll animate-delay-${(i % 2) + 1}">
-        <span class="tag">${u.tag}</span>
-        <p class="date">${new Date(u.date).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-        <h4>${u.title}</h4>
-        <p>${u.summary}</p>
-      </div>
-    `
-      )
-      .join('')
+    if (grid) {
+      grid.innerHTML = updates
+        .map(
+          (u, i) => `
+        <div class="update-card animate-on-scroll animate-delay-${(i % 2) + 1}">
+          <span class="tag">${u.tag}</span>
+          <p class="date">${new Date(u.date).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <h4>${u.title}</h4>
+          <p>${u.summary}</p>
+        </div>
+      `
+        )
+        .join('')
+    }
 
     initScrollAnimations()
   } catch (e) {

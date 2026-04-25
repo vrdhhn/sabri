@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products &amp; Services — SABRI Pvt. Ltd.</title>
   <meta name="description" content="Explore SABRI's agriculture services, food processing support, project guidance, training, and branding solutions. Building India's sustainable food future." />
-  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="icon" href="/images/logo.png" />
   <link rel="stylesheet" href="/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="container page-hero-content">
-      <span class="section-label" style="color:var(--yellow-400);">Our Offerings</span>
+      <span class="section-label" style="color:var(--white);">Our Offerings</span>
       <h1>Products &amp; Services</h1>
       <p>End-to-end agricultural solutions — from high-value crop consultancy to food processing support, DPR preparation, and market linkage.</p>
     </div>
@@ -55,7 +56,7 @@
 
         <!-- Agriculture Services -->
         <div class="service-card animate-on-scroll animate-delay-1">
-          <div class="service-icon">🌾</div>
+          <div class="service-icon"><i data-lucide="wheat"></i></div>
           <h4>Agriculture Services</h4>
           <ul style="color:var(--gray-600);margin-top:var(--space-sm);">
             <li style="padding:4px 0;">✓ High-value crop consultancy (Moringa, Mushroom, exotic vegetables)</li>
@@ -67,7 +68,7 @@
 
         <!-- Food Processing Support -->
         <div class="service-card animate-on-scroll animate-delay-2">
-          <div class="service-icon">🏭</div>
+          <div class="service-icon"><i data-lucide="factory"></i></div>
           <h4>Food Processing Support</h4>
           <ul style="color:var(--gray-600);margin-top:var(--space-sm);">
             <li style="padding:4px 0;">✓ Small and medium-scale food unit setup</li>
@@ -79,7 +80,7 @@
 
         <!-- Project & Business Support -->
         <div class="service-card animate-on-scroll animate-delay-3">
-          <div class="service-icon">📋</div>
+          <div class="service-icon"><i data-lucide="clipboard-list"></i></div>
           <h4>Project &amp; Business Support</h4>
           <ul style="color:var(--gray-600);margin-top:var(--space-sm);">
             <li style="padding:4px 0;">✓ DPR (Detailed Project Report) preparation</li>
@@ -91,7 +92,7 @@
 
         <!-- Training & Capacity Building -->
         <div class="service-card animate-on-scroll animate-delay-4">
-          <div class="service-icon">🎓</div>
+          <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
           <h4>Training &amp; Capacity Building</h4>
           <ul style="color:var(--gray-600);margin-top:var(--space-sm);">
             <li style="padding:4px 0;">✓ Farmer training programs</li>
@@ -103,7 +104,7 @@
 
         <!-- Branding & Market Support -->
         <div class="service-card animate-on-scroll animate-delay-1">
-          <div class="service-icon">📦</div>
+          <div class="service-icon"><i data-lucide="package"></i></div>
           <h4>Branding &amp; Market Support</h4>
           <ul style="color:var(--gray-600);margin-top:var(--space-sm);">
             <li style="padding:4px 0;">✓ Product branding and packaging</li>
@@ -123,14 +124,17 @@
   <section class="section">
     <div class="container">
       <div class="invest-cta animate-on-scroll">
-        <span class="section-label" style="color:var(--yellow-400);">Partner With Us</span>
+        <span class="section-label" style="color:var(--white);">Partner With Us</span>
         <h2>Looking to Connect?</h2>
         <p>We support farmers, entrepreneurs, FPOs, food processors, and government scheme beneficiaries. Get in touch to explore how SABRI can help you.</p>
-        <a href="/contact.html" class="btn btn-yellow">Get in Touch →</a>
+        <a href="/contact.html" class="btn btn-orange">Get in Touch →</a>
       </div>
     </div>
   </section>
 
   <script type="module" src="/js/products.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

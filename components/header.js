@@ -19,12 +19,12 @@ export function createHeader(activePage) {
   nav.innerHTML = `
     <div class="nav-inner">
       <a href="/" class="nav-brand">
-        <img src="/images/logo.jpg" alt="SABRI Pvt. Ltd." />
+        <img src="/images/logo.png" alt="SABRI Pvt. Ltd." />
         <span>SABRI</span>
       </a>
       <div class="nav-links" id="navLinks">
         ${linksHTML}
-        <a href="/contact.html" class="nav-cta">Get in Touch →</a>
+        <a href="/contact.html" class="nav-cta">Get in Touch <i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -54,4 +54,8 @@ export function createHeader(activePage) {
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 50);
   });
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
