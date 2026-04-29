@@ -34,7 +34,7 @@ export function createFooter() {
           <h4>Contact Us</h4>
           <div class="footer-contact-item">
             <span class="icon"><i data-lucide="mail"></i></span>
-            <span>info.sabripvt@gmail.com</span>
+            <span>contact@sabriag.com</span>
           </div>
           <div class="footer-contact-item">
             <span class="icon"><i data-lucide="phone"></i></span>
@@ -43,6 +43,10 @@ export function createFooter() {
           <div class="footer-contact-item">
             <span class="icon"><i data-lucide="phone"></i></span>
             <span>+91 9931998414</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon"><i data-lucide="map-pin"></i></span>
+            <span>Tekari Gaya ji, Bihar India-824236 (Incorporate Office)</span>
           </div>
           <div class="footer-contact-item">
             <span class="icon"><i data-lucide="map-pin"></i></span>

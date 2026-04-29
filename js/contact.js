@@ -9,7 +9,7 @@ initScrollAnimations()
 initScrollToTop()
 
 // ⚠️ Replace with your Web3Forms access key from https://web3forms.com
-const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE';
+const WEB3FORMS_KEY = 'b6c8c382-4def-4061-a347-d4dd01c3485d';
 
 // Contact form handling
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
